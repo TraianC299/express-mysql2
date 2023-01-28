@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A sample form</title>
+  <style>
+    body { padding-top: 50px; }
+    input {
+        display: block;
+        margin-bottom: 10px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+        width: 300px;
+        
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        width: 300px;
+        cursor: pointer;
+    }
+    button:hover {
+        opacity: 0.8;
+    }
+    form {
+        width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    
+  </style>
+</head>
+<body>
+  <form action = "/customers/editCustomers", method = "POST">
+    <select name="id">
+        <otion title="1" value={1}></otion>
+        <otion title="2" value={2}></otion>
+        
+    </select>
+  <input type="text" name="first_name" placeholder="Name">
+  <input type="text" name="last_name" placeholder="Name">
+  <input type="text" name="city" placeholder="City">
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>

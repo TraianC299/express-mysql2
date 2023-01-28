@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A sample form</title>
+  <style>
+    body { padding-top: 50px; }
+  </style>
+</head>
+<body>
+    <form action="/files/file-upload" method="post" enctype="multipart/form-data"> 
+      <input type="text" name="first_name" placeholder="Name"></input>
+      <input type="text" name="last_name" placeholder="Surname"></input>
+        <input type="file" name="filetoupload"><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
